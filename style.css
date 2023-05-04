@@ -1,0 +1,99 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 215vh;
+    height: 100vh;
+    background-color:aquamarine;
+
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 25rem;
+    padding: 5em 2rem;
+    box-shadow: 0px 0px 20px 0px black;
+    border: 1px solid green;
+}
+.login-tittle{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.Username,
+.userpossword{
+    text-align: center;
+    border: 2px solid green;
+    margin: 1rem;
+    color: green;
+    background: transparent;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    width: 15rem;
+    font-size: 1.2rem;
+    outline: green;
+    transition: all .2s ease-in-out;
+    
+}
+.Username:focus,
+.userpossword:focus{
+    width: 20rem;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorChange{
+    0%{
+        border-color: blue;
+        color: blue;
+    }
+    10%{
+        border-color: green;
+        color:green ;
+    }
+    20%{
+        border-color:purple ;
+        color:purple ;
+    }
+    30%{
+        border-color:violet ;
+        color: violet;
+    }
+    40%{
+        border-color:yellow ;
+        color:yellow ;
+    }
+    50%{
+        border-color: red;
+        color:red ;
+    }
+}
+.loginbtn{
+    background: transparent;
+    border: 2px seagreen;
+    padding: 1rem 3rem;
+    border-radius: 6rem;
+    text-decoration: underline;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.loginbtn:hover {
+    background-color: green;
+    border: 2px solid green;
+
+}
